@@ -26,13 +26,13 @@ interface IProps {
 
 interface IState {
     msg: string
-    decription: string
+    description: string
 }
 
 export class CountComp extends React.Component<IProps, IState> {
-    state = {
+    state: IState = {
         msg: '',
-        decription: ''
+        description: ''
     }
     render() {
         return (

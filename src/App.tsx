@@ -17,7 +17,13 @@ import { CountComp } from './components/CountCom';
 
 // export default App;
 
-export class App extends React.Component {
+
+interface IState {
+  num: number
+}
+
+
+export class App extends React.Component<{}, IState> {
   state = {
     num: 0
   }
